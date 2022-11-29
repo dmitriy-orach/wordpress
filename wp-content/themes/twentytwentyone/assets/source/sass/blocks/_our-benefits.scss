@@ -1,0 +1,68 @@
+.our-benefits {
+    background-color: $light-gray;
+
+    &__title {
+        margin-bottom: 40px;
+
+        @media (max-width: $mobile-max) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        column-gap: 20px;
+        row-gap: 40px;
+
+        @media (max-width: $mobile-max) {
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 30px;
+        }
+    }
+
+    &__item {
+        width: calc(100% / 3 - 14px);
+
+        @media (max-width: $mobile-max) {
+            width: 100%;
+        }
+    }
+
+    &__item-header {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 16px;
+        color: $black;
+        margin-bottom: 10px;
+    }
+
+    &__item-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: $black;
+        margin: 0;
+    }
+
+    &__item-icon {
+        margin-bottom: 20px;
+        min-height: 62px;
+
+        .icon::before {
+            font-size: 50px;
+            color: $orange;
+        }
+
+        .benefit1 {
+            content: url('/wp-content/themes/twentytwentyone/image/design/icons/benefit1.svg');
+        }
+        
+        .benefit4 {
+            content: url('/wp-content/themes/twentytwentyone/image/design/icons/benefit4.svg');
+        }
+    }
+}

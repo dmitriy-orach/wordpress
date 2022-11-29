@@ -1,0 +1,39 @@
+@font-face { 
+    font-family: 'Mariupol Bold'; 
+        src: url('/wp-content/themes/twentytwentyone/stylesheet/fonts/Mariupol/Mariupol/Mariupol-Bold.otf');
+        src: url('/wp-content/themes/twentytwentyone/stylesheet/fonts/Mariupol/Mariupol-Bold.ttf') format('ttf'),
+        url('/wp-content/themes/twentytwentyone/stylesheet/fonts/Mariupol/Mariupol-Bold.woff2') format('woff2'),
+        url('/wp-content/themes/twentytwentyone/stylesheet/fonts/Mariupol/Mariupol-Bold.woff') format('woff');
+    font-weight: 700; 
+    font-style: normal; 
+}
+
+@font-face { 
+    font-family: 'Mariupol Medium'; 
+        src: url('/wp-content/themes/twentytwentyone/stylesheet/fonts/Mariupol/Mariupol-Medium.otf');
+        src: url('/wp-content/themes/twentytwentyone/stylesheet/fonts/Mariupol/Mariupol-Medium.ttf') format('ttf'),
+        url('/wp-content/themes/twentytwentyone/stylesheet/fonts/Mariupol/Mariupol-Medium.woff2') format('woff2'),
+        url('/wp-content/themes/twentytwentyone/stylesheet/fonts/Mariupol/Mariupol-Medium.woff') format('woff');
+    font-weight: 500; 
+    font-style: normal; 
+}
+
+@font-face { 
+    font-family: 'Mariupol Regular'; 
+        src: url('/wp-content/themes/twentytwentyone/stylesheet/fonts/Mariupol/Mariupol-Regular.otf');
+        src: url('/wp-content/themes/twentytwentyone/stylesheet/fonts/Mariupol/Mariupol-Regular.ttf') format('ttf'),
+        url('/wp-content/themes/twentytwentyone/stylesheet/fonts/Mariupol/Mariupol-Regular.woff2') format('woff2'),
+        url('/wp-content/themes/twentytwentyone/stylesheet/fonts/Mariupol/Mariupol-Regular.woff') format('woff');
+    font-weight: 400; 
+    font-style: normal; 
+}
+
+@font-face { 
+    font-family: 'Mariupol Symbols'; 
+        src: url('/wp-content/themes/twentytwentyone/stylesheet/fonts/Mariupol/MariupolSymbols.otf');
+        src: url('/wp-content/themes/twentytwentyone/stylesheet/fonts/Mariupol/MariupolSymbols.ttf') format('ttf'),
+        url('/wp-content/themes/twentytwentyone/stylesheet/fonts/Mariupol/MariupolSymbols.woff2') format('woff2'),
+        url('/wp-content/themes/twentytwentyone/stylesheet/fonts/Mariupol/MariupolSymbols.woff') format('woff');
+    font-weight: normal; 
+    font-style: normal; 
+}

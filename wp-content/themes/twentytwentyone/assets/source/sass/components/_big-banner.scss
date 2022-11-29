@@ -1,0 +1,133 @@
+.big-banner {
+    position: relative;
+
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slick-dots {
+        bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+
+        li {
+            width: 11px;
+            height: 11px;
+            margin: 0;
+
+            &.slick-active {
+                width: 15px;
+                height: 15px;
+
+                button {
+                    width: 15px;
+                    height: 15px;
+
+                    &::before {
+                        content: '';
+                        width: 15px;
+                        height: 15px;
+                        background-color: $white;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            button {
+                width: 11px;
+                height: 11px;
+
+                &::before {
+                    content: '';
+                    width: 11px;
+                    height: 11px;
+                    border: 1px solid $white;
+                    border-radius: 50%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.big-banner-slide {
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+        width: 100%;
+    }
+
+    &__img {
+        position: relative;
+        width: 100%;
+
+        &::before {
+            content: '';
+            background-color: rgb(17, 17, 17, 70%);
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+
+            @media (max-width: $mobile-max) {
+                height: 404px;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 42px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        display: block;
+
+        @media (max-width: $mobile-max) {
+            font-size: 24px;
+            line-height: 23px;
+        }
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 724px;
+        margin: 0 auto;
+
+        @media (max-width: $mobile-max) {
+            font-size: 16px;
+        }
+    }
+
+    &__btn {
+        margin-top: 40px;
+    }
+}

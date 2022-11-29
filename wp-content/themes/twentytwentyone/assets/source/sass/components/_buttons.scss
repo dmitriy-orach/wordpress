@@ -1,0 +1,18 @@
+.btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 60px;
+    background-color: $orange;
+    padding: 22px 40px;
+    border: 1px solid $orange;
+    outline: none;
+    color: $white ;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+        color: $white;
+    }
+}

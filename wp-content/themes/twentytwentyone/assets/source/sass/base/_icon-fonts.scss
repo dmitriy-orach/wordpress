@@ -1,0 +1,46 @@
+@font-face {
+	font-family: "icons";
+	src: url('fonts/icon-fonts/icons.eot');
+	src: url('fonts/icon-fonts/icons.eot?#iefix') format('eot'),
+		url('fonts/icon-fonts/icons.woff2') format('woff2'),
+		url('fonts/icon-fonts/icons.woff') format('woff'),
+		url('fonts/icon-fonts/icons.ttf') format('truetype'),
+		url('fonts/icon-fonts/icons.svg#icons') format('svg');
+}
+
+.icon:before {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-0001-facebook:before {
+	content: "\E001";
+}
+
+.icon-0002-youtube:before {
+	content: "\E002";
+}
+
+.icon-0004-benefit2:before {
+	content: "\E003";
+}
+
+.icon-0005-benefit3:before {
+	content: "\E004";
+}
+
+.icon-0007-benefit5:before {
+	content: "\E005";
+}
+
+.icon-0008-benefit6:before {
+	content: "\E006";
+}

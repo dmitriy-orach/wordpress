@@ -1,0 +1,13 @@
+.home-about-us,
+.home-our-benefits,
+.home-our-trademarks,
+.home-our-partners,
+.home-our-directions {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media (max-width: $mobile-max) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}

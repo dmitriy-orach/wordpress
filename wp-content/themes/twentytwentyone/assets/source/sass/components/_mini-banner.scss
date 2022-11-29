@@ -1,0 +1,129 @@
+.mini-banner {
+    background-color: $dark-gray;
+
+    &__box {
+        padding: 60px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        gap: 50px;
+
+        &::before,
+        &::after {
+            display: none;
+        }
+
+        @media (max-width: $mobile-max) {
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 15px 60px;
+        }
+
+        &_right {
+            @media (max-width: $desktop-min) {
+                flex-direction: column-reverse;
+            }
+
+            @media (max-width: $mobile-max) {
+                flex-direction: column-reverse;
+                padding: 60px 15px 0;
+                gap: 30px;
+            }
+        }
+    }
+
+    &__img {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+
+        img {
+            width: 100%;
+            max-width: 518px;
+            height: auto;
+        }
+
+        &_right {
+            position: static;
+            margin-top: -90px;
+            margin-bottom: -78px;
+
+            img {
+                width: 100%;
+                max-width: 213px;
+                height: auto;
+            }
+
+            @media (max-width: $desktop-min) {
+                margin-bottom: -60px;
+                margin-top: 0;
+            }
+
+            @media (max-width: $mobile-max) {
+                position: static;
+                margin-bottom: 0;
+                top: 0 !important;
+                right: 30px;
+            }
+        }
+
+        @media (max-width: $mobile-max) {
+            position: relative;
+            top: -40px;
+        }
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: $white;
+        margin: 0;
+
+        @media (max-width: $mobile-max) {
+            font-size: 22px;
+        }
+    }
+
+    &__btn {
+        margin-top: 20px;
+
+        @media (max-width: $mobile-max) {
+            margin: 20px auto 0;
+        }
+    }
+
+    &__text {
+        position: relative;
+        z-index: 2;
+
+        &_flex-direction-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+
+            @media (max-width: $mobile-max) {
+                flex-direction: column;
+                gap: 30px;
+
+                .header__contacts {
+                    flex-direction: column;
+                    gap: 30px;
+                }
+
+                .header__socials {
+                    display: flex;
+                }
+            }
+        }
+
+        @media (max-width: $mobile-max) {
+            text-align: center;
+        }
+    }
+}

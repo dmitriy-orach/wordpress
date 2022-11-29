@@ -1,0 +1,43 @@
+.our-partners {
+    &__title {
+        margin-bottom: 56px;
+    }
+
+    &__box {
+        img {
+            padding: 0 10px;
+            width: 100%;
+            height: auto;
+            
+            @media (max-width: $mobile-max) {
+                padding: 0 5px;
+            }
+        }
+
+        @media (max-width: $mobile-max) {
+            padding: 0 40px;
+        }
+    }
+
+    .slick-arrow {
+        width: 18px;
+        height: 18px;
+        border-bottom: 1px solid $medium-gray;
+        border-right: 1px solid $medium-gray;
+        transform: rotate(-45deg);
+
+        &.slick-prev {
+            transform: rotate(135deg);
+
+            @media (max-width: $mobile-max) {
+                left: 0;
+            }
+        }
+
+        &.slick-next {
+            @media (max-width: $mobile-max) {
+                right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,247 @@
+.header {
+    padding: 10px 0;
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+
+        @media (max-width: $mobile-max) {
+            & > div:last-child {
+                order: 2;
+            }
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 50px;
+    }
+
+    &__phones {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 5px;
+
+        a {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 23px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            white-space: nowrap;
+
+            &:hover {
+                color: $orange;
+            }
+
+            @media (max-width: $mobile-max) {
+                font-size: 18px;
+                line-height: 17px;
+            }
+        }
+
+        span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 13px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: $medium-gray;
+            white-space: nowrap;
+
+            @media (max-width: $mobile-max) {
+                font-size: 12px;
+                line-height: 12px;
+            }
+        }
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: $orange;
+            border-radius: 50%;
+
+            &::before {
+                color: $white;
+            }
+
+            &.icon-0002-youtube::before {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: $mobile-max) {
+            display: none;
+        }
+    }
+
+    #logo {
+        margin: 0;
+    
+        img {
+            max-width: 145px;
+            height: auto;
+
+            @media (max-width: $mobile-max) {
+                max-width: 92px;
+            }
+        }
+
+        @media (max-width: $mobile-max) {
+            order: 1;
+        }
+    }
+    
+    .navbar-collapse {
+        padding: 0;
+        position: relative;
+
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            &::before,
+            &::after {
+                display: none;
+            }
+
+            @media (max-width: $mobile-max) {
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-content: flex-start;
+                align-items: flex-start;
+                padding: 82px 30px 20px;
+                position: relative;
+                gap: 25px;
+                margin: 0;
+            }
+        }
+    }
+
+    .megamenu-burger {
+        @media (max-width: $mobile-max) {
+            display: block;
+            width: 30px;
+            height: 20px;
+            background-image: url('/image/design/decor/mobile-menu-burger.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    
+    #megamenu-menu {
+        min-height: auto;
+        margin: 0;
+
+        a {
+            padding: 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 15px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: $black;
+            transition: .2s ease-in;
+
+            &:hover {
+                background-color: transparent;
+                color: $orange;
+                transition: .2s ease-in;
+            }
+
+            @media (max-width: $mobile-max) {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 15px;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: $white;
+            }
+        }
+
+        .header__contacts {
+            display: none;
+        }
+
+        &.open-menu {
+            @media (max-width: $mobile-max) {
+                display: block;
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 15%;
+                bottom: 0;
+                background-color: $black;
+                z-index: 10;
+
+                .navbar-collapse {
+                    display: block;
+                    overflow: scroll;
+                    height: 100%;
+
+                    .header__contacts {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        padding: 0 30px;
+                        margin-top: 40px;
+
+                        .header__phones {
+                            align-items: flex-start;
+                            
+                            a {
+                                font-size: 18px;
+                                font-weight: 700;
+                            }
+                        }
+
+                        .header__socials {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: $mobile-max) {
+        .close-menu {
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 30px;
+            z-index: 11;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            background-image: url('/image/design/icons/close.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 22px;
+            height: 22px;
+        }
+
+        .top-menu {
+            order: 3;
+        }
+    }
+}

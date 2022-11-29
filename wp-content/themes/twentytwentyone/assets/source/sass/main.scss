@@ -1,0 +1,28 @@
+// base
+@import "base/normalize";
+@import "base/fonts";
+@import "base/variables";
+@import "base/icon-fonts";
+@import "base/basic";
+@import "base/text";
+@import "base/default-styles";
+
+// libs
+@import "libs/nice-select/nice-select";
+
+// components
+@import "components/buttons";
+@import "components/big-banner";
+@import "components/mini-banner";
+
+//blocks
+@import "blocks/header";
+@import "blocks/about-us";
+@import "blocks/our-benefits";
+@import "blocks/our-trademarks";
+@import "blocks/our-partners";
+@import "blocks/our-directions";
+@import "blocks/footer";
+
+// pages
+@import "pages/home";
